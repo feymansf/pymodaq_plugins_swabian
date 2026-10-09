@@ -48,7 +48,7 @@ class DAQ_0DViewer_Counter(DAQ_Viewer_base):
 
     def commit_settings(self, param: Parameter):
         if param.name() in ['channel_1', 'channel_2', 'bin_width_ms']:
-        if self.counter is not None:
+          if self.counter is not None:
             self.counter.stop()
             self.counter = None
 
